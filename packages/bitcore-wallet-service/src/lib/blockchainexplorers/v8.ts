@@ -49,7 +49,7 @@ export class V8 {
   host: string;
   userAgent: string;
   baseUrl: string;
-  request: request;
+  request: any;
   Client: typeof Client;
   private _cachedReserve: number;
   private _cachedReserveTs: number;

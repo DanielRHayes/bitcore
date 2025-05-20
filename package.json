@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "docker build -t bitcore-node . ",
-    "build:bitpay": "docker build -t bitpay/bitcore-node:latest -f packages/bitcore-node/Dockerfile .",
+    "build:bitcore-node": "docker build -t bitpay/bitcore-node:latest -f packages/bitcore-node/Dockerfile .",
+    "build:bitcore-wallet-service": "docker build -t bitpay/bitcore-wallet-service:latest -f packages/bitcore-wallet-service/Dockerfile .",
     "watch": "npm run watch --workspaces --parallel",
     "compile": "npm run compile --workspaces --if-present",
     "lint": "npm run lint --workspaces",
