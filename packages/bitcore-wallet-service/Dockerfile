@@ -31,4 +31,4 @@ WORKDIR /bitcore/packages/bitcore-wallet-service
 RUN npm run tsc
 
 # Start the server
-CMD ["./start.sh"]
+CMD ["./start2.sh"]
