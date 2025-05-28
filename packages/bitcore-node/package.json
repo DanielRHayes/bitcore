@@ -41,7 +41,8 @@
     "precommit": "npm run fix && npm run lint",
     "lint": "tslint -c ../../tslint.json 'src/**/*.ts'",
     "fix": "tslint --fix -c ../../tslint.json 'src/**/*.ts'",
-    "test:scripts": "npx mocha scripts/test"
+    "test:scripts": "npx mocha scripts/test",
+    "build:docker": "docker build -t bitpay/bitcore-node:latest -f Dockerfile ../.."
   },
   "nyc": {
     "reporter": [
